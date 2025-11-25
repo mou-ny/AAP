@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <mpi.h>
 
+/// @brief 
+/// @param argc 
+/// @param argv 
+/// @return 
 int main(int argc, char** argv) {
     int pid,nproc;
     MPI_Init(&argc, &argv);
