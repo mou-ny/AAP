@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     
     ///////////////////// MODIFIER A PARTIR D'ICI UNIQUEMENT /////////////////////
     
-    #pragma omp parallel for private(cur) reduction(+:pass)
+    #pragma omp parallel for private(cur)// reduction(+:pass)
     for(int i = 0; i < TOTAL; i++) {
         cur = i;
         while (cur > 1)

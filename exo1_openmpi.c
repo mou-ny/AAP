@@ -17,7 +17,6 @@ int main() {
         printf("Thread %d of %d threads: Hello from parallel region!\n", 
                thread_id, total_threads);
         
-        // Master thread displays "Hello World"
         #pragma omp master
         {
             printf("\n*** Master Thread %d says: Hello World! ***\n\n", 
